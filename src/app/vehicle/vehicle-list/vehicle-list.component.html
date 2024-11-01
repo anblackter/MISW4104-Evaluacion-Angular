@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-7">
+    <table class="table">
+      <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Marca</th>
+        <th>Línea</th>
+        <th>Modelo</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let vehicle of vehicles">
+        <td>{{ vehicle.id }}</td>
+        <td>{{ vehicle.marca }}</td>
+        <td>{{ vehicle.linea }}</td>
+        <td>{{ vehicle.modelo }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
