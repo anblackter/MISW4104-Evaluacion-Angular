@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Autor: Angel Yecid Henao Bedoya
 - Correo: ay.henao@uniandes.edu.co
 - Curso: MISW4104
-- Fecha: 11 de Noviembre de 2024
+- Fecha: 1 de Noviembre de 2024
 
 ### Evidencia resultado final luego de implementar los 3 puntos
 ![img.png](evidencia_1.png)
