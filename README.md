@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
 
+# Desarrollo de la Evaluación Práctica Angular
+- Autor: Angel Yecid Henao Bedoya
+- Correo: ay.henao@uniandes.edu.co
+- Curso: MISW4104
+- Fecha: 11 de Noviembre de 2024
+
+### Evidencia resultado final luego de implementar los 3 puntos
+![img.png](evidencia_1.png)
+### Evidencia resultado de las pruebas
+![img.png](evidencia_2.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
