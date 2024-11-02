@@ -20,3 +20,8 @@
     </table>
   </div>
 </div>
+<div class="row">
+  <tr *ngFor="let total of totalVehicles">
+    <td>Total {{ total.marca }}: {{ total.total }}</td>
+  </tr>
+</div>

@@ -10,6 +10,7 @@ import { VehicleService } from '../vehicle.service';
 export class VehicleListComponent implements OnInit {
 
   vehicles: Array<Vehicle> = [];
+  totalVehicles: Array<{marca: string, total: number}> = [];
 
   constructor(private vehicleService: VehicleService) { }
 
@@ -19,8 +20,26 @@ export class VehicleListComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {
-    this.getVehicles();
+  calculateTotalVehicles(): void {
+    let brands: Array<string> = [];
+    this.vehicleService.getVehicles().subscribe((vehicles) => {
+      this.vehicles = vehicles;
+      this.vehicles.forEach((vehicle) => {
+        if(!brands.includes(vehicle.marca)){
+          brands.push(vehicle.marca);
+        }
+      });
+      this.totalVehicles = brands.map((marca) => {
+        return {
+          marca: marca,
+          total: this.vehicles.filter((vehicle) => vehicle.marca === marca).length
+        };
+      });
+    });
   }
 
+  ngOnInit(): void {
+    this.getVehicles();
+    this.calculateTotalVehicles();
+  }
 }
